@@ -9,7 +9,7 @@ jobs:
       - run:
           command: mkdir robot-out
       - run:
-          command: robot --xunit -d ./robot-out/result.xml test1.robot
+          command: robot --xunit ./robot-out/result.xml test1.robot
           name: Test
       - store_test_results:
           path: ./robot-out
