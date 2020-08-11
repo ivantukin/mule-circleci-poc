@@ -7,7 +7,9 @@ jobs:
       - python/install-deps
       #- python/save-cache
       - run:
-          command: robot --xunit -d ./robot-out test1.robot
+          command: mkdir robot-out
+      - run:
+          command: robot --xunit -d ./robot-out/result.xml test1.robot
           name: Test
       - store_test_results:
           path: ./robot-out
