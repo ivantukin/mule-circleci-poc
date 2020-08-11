@@ -3,9 +3,9 @@ jobs:
     executor: python/default
     steps:
       - checkout
-      - python/load-cache
+      #- python/load-cache
       - python/install-deps
-      - python/save-cache
+      #- python/save-cache
       - run:
           command: robot -d ./robot-out test1.robot
           name: Test
