@@ -7,9 +7,7 @@ jobs:
       - python/install-deps
       - python/save-cache
       - run:
-          command: |
-            # pytest would be a dep in requirements.txt
-            robot -d ./robot-out test1.robot
+          command: robot -d ./robot-out test1.robot
           name: Test
       - store_test_results:
           path: ./robot-out
