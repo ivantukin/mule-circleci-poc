@@ -1,4 +1,4 @@
 robotframework
+RESTinstance
 robotframework-requests
 robotframework-rabbitmq
-RESTinstance
