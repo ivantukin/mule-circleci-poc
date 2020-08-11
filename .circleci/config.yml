@@ -1,5 +1,5 @@
 jobs:
-  build:
+  integration-test:
     executor: python/default
     steps:
       - checkout
@@ -17,4 +17,4 @@ version: 2.1
 workflows:
   main:
     jobs:
-      - build
+      - integration-test
