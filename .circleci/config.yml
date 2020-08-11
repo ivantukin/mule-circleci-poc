@@ -11,6 +11,8 @@ jobs:
             # pytest would be a dep in requirements.txt
             robot -d ./robot-out test1.robot
           name: Test
+      - store_test_results:
+          path: ./robot-out
 orbs:
   python: circleci/python@0.1
 version: 2.1
